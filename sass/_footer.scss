@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+  # Variables
+  --------------------------------------------------------------*/
+// Generales
+$colorPrimario: rgb(169, 241, 175);
+$colorSecundario: #1dc8cd;
+$colorFondo: white;
+$colorTexto: #666666;
+// Boton Flotante
+$fondoDegrade: linear-gradient(45deg, #1de099, #1dc8cd);
+$fondoHover: #1dc8cd;
+$colorBtnFlotante: white;
+//Destacados
+$colorFondoDestacados: black;
+$colorFondoItem: rgba(0, 0, 0, 0.7);
+$color: white;
+$colorBtn: #2a72ed;
+// Footer
+$colorBoxShadow: rgba(0, 0, 0, 0.1);
+$colorFooter: #333;
+$colorFooterCredits: #888;
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: $colorFondo;
+    box-shadow: 0px 0px 12px 0px $colorBoxShadow;
+    padding: 30px 0;
+    color: $colorFooter;
+    font-size: 14px;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+    color: $colorFooterCredits;
+  }
+  
+  #footer .footer-links a {
+    color: $colorTexto;
+    padding-left: 15px;
+  }
+  
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  
+  #footer .footer-links a:hover {
+    color: $colorSecundario;
+  }

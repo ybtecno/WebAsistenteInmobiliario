@@ -1,0 +1,169 @@
+/* Portfolio Alquila
+--------------------------------*/
+#portfolio-alquila {
+    padding: 40px 40px 0px 40px;
+  }
+  
+  #portfolio-alquila .portfolio-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  #portfolio-alquila .portfolio-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.75);
+  }
+  
+  #portfolio-alquila .portfolio-item {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+  }
+  
+  #portfolio-alquila .portfolio-item figure {
+    background: #000;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+  }
+  
+  #portfolio-alquila .portfolio-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: 300px;
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-preview, #portfolio .portfolio-item figure .link-details {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-preview i, #portfolio .portfolio-item figure .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-preview:hover, #portfolio .portfolio-item figure .link-details:hover {
+    background: #18d26e;
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-preview:hover i, #portfolio .portfolio-item figure .link-details:hover i {
+    color: #fff;
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-preview {
+    left: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #portfolio-alquila .portfolio-item figure .link-details {
+    right: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #portfolio-alquila .portfolio-item figure:hover .link-preview {
+    opacity: 1;
+    left: calc(50% - 44px);
+  }
+  
+  #portfolio-alquila .portfolio-item figure:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 44px);
+  }
+  
+  #portfolio-alquila .portfolio-item .portfolio-info {
+    background: rgb(187, 187, 187);
+    text-align: center;
+    padding: 30px;
+    height: 90px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #portfolio-alquila .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+  }
+  
+  #portfolio-alquila .portfolio-item .portfolio-info h4 a {
+    color: rgb(3, 100, 11);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  #portfolio-alquila .portfolio-item .portfolio-info h4 a:hover {
+    color: white;
+    font-weight: bold;
+  }
+  
+  #portfolio-alquila .portfolio-item .portfolio-info p {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    
+  }
+
+  /* Section with background
+--------------------------------*/
+.section-bg {
+    background: #f7f7f7;
+  }
+
+  /* Sections Header
+--------------------------------*/
+.section-header h3 {
+    font-size: 32px;
+    color: #730404;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+  .section-header p {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+  }
+  

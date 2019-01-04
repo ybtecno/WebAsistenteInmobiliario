@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+  # Variables
+  --------------------------------------------------------------*/
+// Generales
+$colorPrimario: rgb(169, 241, 175);
+$colorSecundario: #1dc8cd;
+$colorFondo: white;
+$colorTexto: #666666;
+// Boton Flotante
+$fondoDegrade: linear-gradient(45deg, #1de099, #1dc8cd);
+$fondoHover: #1dc8cd;
+$colorBtnFlotante: white;
+//Destacados
+$colorFondoDestacados: black;
+$colorFondoItem: rgba(0, 0, 0, 0.7);
+$color: white;
+$colorBtn: #2a72ed;
+/*--------------------------------------------------------------
+# destacados Section
+--------------------------------------------------------------*/
+#destacados {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: $colorFondoDestacados;
+  }
+  
+  #destacados .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #destacados .carousel-item::before {
+    content: '';
+    background-color: $colorFondoItem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  #destacados .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #destacados .carousel-content {
+    text-align: center;
+  }
+  
+  #destacados h2 {
+    color: $color;
+    margin-bottom: 30px;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    #destacados h2 {
+      font-size: 28px;
+    }
+  }
+  
+  #destacados p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: $color;
+  }
+  
+  @media (min-width: 1024px) {
+    #destacados p {
+      width: 60%;
+    }
+  }
+  
+  #destacados .carousel-fade .carousel-inner .carousel-item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+  }
+  
+  #destacados .carousel-fade .carousel-inner .carousel-item,
+  #destacados .carousel-fade .carousel-inner .active.carousel-item-left,
+  #destacados .carousel-fade .carousel-inner .active.carousel-item-right {
+    opacity: 0;
+  }
+  
+  #destacados .carousel-fade .carousel-inner .active,
+  #destacados .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+  #destacados .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  #destacados .carousel-fade .carousel-inner .carousel-item-next,
+  #destacados .carousel-fade .carousel-inner .carousel-item-prev,
+  #destacados .carousel-fade .carousel-inner .active.carousel-item-left,
+  #destacados .carousel-fade .carousel-inner .active.carousel-item-right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #destacados .carousel-control-prev, #destacados .carousel-control-next {
+    width: 10%;
+  }
+  
+  @media (min-width: 1024px) {
+    #destacados .carousel-control-prev, #destacados .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  #destacados .carousel-control-next-icon, #destacados .carousel-control-prev-icon {
+    background: none;
+    font-size: 32px;
+    line-height: 1;
+  }
+  
+  #destacados .carousel-indicators li {
+    cursor: pointer;
+  }
+  
+  #destacados .btn-get-started {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: $color;
+    background: $colorBtn;
+  }
+  
+  #destacados .btn-get-started:hover {
+    background: $color;
+    color: $colorBtn;
+  }

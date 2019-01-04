@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+  # Variables
+  --------------------------------------------------------------*/
+// Generales
+$colorPrimario: rgb(169, 241, 175);
+$colorSecundario: #1dc8cd;
+$colorFondo: white;
+$colorTexto: #666666;
+// Boton Flotante
+$fondoDegrade: linear-gradient(45deg, #1de099, #1dc8cd);
+$fondoHover: #1dc8cd;
+$colorBtnFlotante: white;
+//Destacados
+$colorFondoDestacados: black;
+$colorFondoItem: rgba(0, 0, 0, 0.7);
+$color: white;
+$colorBtn: #2a72ed;
+// Footer
+$colorBoxShadow: rgba(0, 0, 0, 0.1);
+$colorFooter: #333;
+$colorFooterCredits: #888;
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    background: $colorFondo;
+    color: $colorTexto;
+    font-family: "Open Sans", sans-serif, Comic;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: $colorSecundario;
+    transition: 0.3s;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: $colorSecundario;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }

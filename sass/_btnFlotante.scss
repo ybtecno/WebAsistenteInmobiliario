@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+  # Variables
+  --------------------------------------------------------------*/
+// Generales
+$colorPrimario: rgb(169, 241, 175);
+$colorSecundario: #1dc8cd;
+$colorFondo: white;
+$colorTexto: #666666;
+// Boton Flotante
+$fondoDegrade: linear-gradient(45deg, #1de099, #1dc8cd);
+$fondoHover: #1dc8cd;
+$colorBtnFlotante: white; 
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: $fondoDegrade;
+    color: $colorBtnFlotante;
+    padding: 2px 20px 8px 20px;
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    right: 15px;
+    bottom: 0;
+    transition: none;
+  }
+  
+  .back-to-top:focus {
+    background: $fondoDegrade;
+    color: $colorBtnFlotante;
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background: $fondoHover;
+    color: $colorBtnFlotante;
+  }
